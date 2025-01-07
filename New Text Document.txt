@@ -1,0 +1,267 @@
+ec2 instance
+aws iam user 
+aws iam policy
+amazon ec2
+
+
+https://docs.google.com/spreadsheets/d/1DptqiYCK-PcT5E-bRyaB2_wv-iwSN7jMX1kEAspguDU/edit?usp=sharing
+
+trainer mail:- abdulkhaleque.aws@lavendertechnology.co.in
+
+aws mcq's questions link:-
+ https://github.com/kananinirav/AWS-Certified-Cloud-Practitioner-Notes/blob/master/practice-exam/practice-exam-11.md
+ https://www.examtopics.com/exams/amazon/aws-certified-solutions-architect-associate-saa-c03/view/
+ https://free-braindumps.com/amazon/free-saa-c03-braindumps.html?p=15
+ 
+
+ec2 linux script:
+----------------
+#!/bin/bash
+# Use this for your user data (script from top to bottom)
+# install httpd (Linux 2 version)
+yum update -y
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+echo "<h1>Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
+
+
+download putty:-  https://www.puttygen.com/download-putty
+
+Hadoop:
+An open-source framework for storing and processing large datasets across a cluster of computers.
+HDFS (Hadoop Distributed File System):
+A distributed file system designed for storing and processing large datasets across multiple machines.
+Part of the Hadoop ecosystem, it splits data into chunks and stores them redundantly for fault tolerance.
+HBase:
+A distributed, column-oriented NoSQL database that runs on top of HDFS.
+Ideal for real-time read/write access to large datasets, often used for sparse data tables.
+Cassandra:
+A distributed NoSQL database designed for high availability and scalability.
+It uses a peer-to-peer architecture, making it great for handling large amounts of data across multiple data centers.
+Kafka:
+A distributed event streaming platform used for building real-time data pipelines and streaming applications.
+It handles high-throughput, fault-tolerant, and durable messaging between systems
+
+
+
+Name: MyVPC 
+
+IPv4 CIDR Block: 10.0.0.0/16 
+
+
+Create Subnets  
+Name: Public-1A
+Availability Zone: us-east-1a 
+IPv4 CIDR Block: 10.0.1.0/24
+ 
+Name: Public-1B 
+Avallability Zone: us-east-lb 
+IPv4 CIDR Block: 10.0.2.0/24
+ 
+Name: Private-1A 
+Availability Zone: us-east-la 
+IPv4 CIDR Block: 10.0.3.0/24
+ 
+Nane: Private-1B 
+Avallability Zone: us-east-1b 
+IPV4 CIDR Block: 10.0.4.0/24
+ Create private route table
+Mame: Private-RT 
+VPC: MyVPC 
+Subnet associations: Private-1A, Private-1B
+# Create Internet Gateway
+Name: MyIGW 
+VPC: MyVPC
+
+#Create Nat Gateway
+
+Name: MyNAtg
+attached to public 1a subnet
+
+hands-on:-
+https://gauravguptacloud.medium.com/aws-s3-cli-commands-f367d0e10f4b
+https://www.cloudericks.com/blog/getting-started-with-amazon-efs-a-hands-on-guide
+
+aws network load balancer hands-on
+
+Timesheets:-
+-------------
+Navyashree N
+3:11 PM
+https://docs.google.com/spreadsheets/d/1kzzSVPXVxQ8FA-5XORgbJoiA7wjVig3LQGiN577vfUY/edit?usp=sharing
+You
+3:12 PM
+https://docs.google.com/spreadsheets/d/1DptqiYCK-PcT5E-bRyaB2_wv-iwSN7jMX1kEAspguDU/edit?usp=sharing
+zarar lee
+3:15 PM
+AWS Exam Readiness
+ram Patil
+3:20 PM
+https://docs.google.com/spreadsheets/d/1_stzgQvJVf8PL-hlM5XJTdiO8JCxCoaijJ_eYKnGbZ4/edit?usp=sharing
+Venkatesh Narige
+3:22 PM
+Krishna fill chesava
+Govardhan Reddy
+3:23 PM
+https://docs.google.com/spreadsheets/d/1bHDO1LV6io3dZ7odfPVnjssqQ-u8sAe-0REKeu5RW88/edit?usp=sharing
+gadduri sreekanth
+3:23 PM
+https://docs.google.com/spreadsheets/d/1h2D2bnnMFwZENBDp-A3NKfZE-II1TfQhI4B8VrdjBQ8/edit?usp=sharing
+priyanka B
+3:25 PM
+https://docs.google.com/spreadsheets/d/159jlJHdW4WBOKFcA0tc_aArWQawIgAl1wNUkFcUzVSg/edit?usp=sharing
+Venkatesh Narige
+3:26 PM
+https://1drv.ms/x/c/098cd7cf8abad9d8/ETckGu8kFwRBtzudjGJsx3sBfMqjtI1turJtLf4g7Cg7pA?e=GRoZBj
+Akshay Joshi
+3:32 PM
+https://docs.google.com/spreadsheets/d/1wgbY5nAM5qyNicoZcYQRj_tr35T22yDdITWS56DiAuU/edit?usp=sharing
+zarar lee
+3:35 PM
+https://docs.google.com/spreadsheets/d/18Qb6gm9ujIHrSStOUYW-bBUpVsX6uDQtnUBuRupUxW0/edit?usp=sharing
+
+
+zarar lee
+4:21 PM
+https://aws.amazon.com/documentation-overview/
+zarar lee
+4:24 PM
+https://repost.aws/knowledge-center
+zarar lee
+4:25 PM
+https://repost.aws/knowledge-center/ec2-windows-replace-lost-key-pair
+https://repost.aws/knowledge-center/user-data-replace-key-pair-ec2
+https://repost.aws/knowledge-center/ec2-ssh-key-pair-regions
+
+Linux:-
+--------
+https://drive.google.com/file/d/1XATUDZ_-ggdVh1RFSIU8npMA3nsroFgE/view?usp=sharing
+https://drive.google.com/file/d/1KNbZdDsI5fuyGa1Dil9YaJjlQpeGErfa/view?usp=drive_link
+
+linux notes:-
+--------------
+https://drive.google.com/drive/folders/1Em6bfouPW_te7SK9iwLoBKkY9BLwX6nT?usp=sharing
+
+
+Attendance:-
+-----------
+https://drive.google.com/drive/folders/1xB31QhjNO3OpAEiTtvyhXM1YNraNHP9U
+
+
+https://www.linkedin.com/newsletters/devops-learning-7245278167089774593/
+
+
+
+Terraform:-
+-----------
+https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html?icmpid=docs_sso_user_portal
+https://www.linkedin.com/pulse/aws-cli-multiple-profiles-bachar-hakam/
+https://drive.google.com/file/d/1Y6ajAAStoW-0U-0LAbDLWA-705Wiljbz/view?usp=sharing
+
+
+[profile pujithuser]
+- setx AWS_PROFILE pujithuser
+
+- aws s3 ls --profile pujithuser
+
+- aws configure list-profiles
+
+- setx AWS_DEFAULT_PROFILE default
+
+- set AWS_ACCESS_KEY_ID (our key)
+- set AWS_SECRET_ACCESS_KEY (our key)
+- set AWS_DEFAULT_REGION us-east-1
+
+- setx AWS_PROFILE default
+
+
+
+https://aws-experience.com/amer/smb/exclusive-offers/aws-credits
+https://www.youtube.com/watch?v=zE4pLxQ-Uto
+https://www.youtube.com/watch?v=24Z7UL5yxpY
+https://ajitsinghkaler.medium.com/get-up-to-300-aws-credits-for-free-89636b7c50f6
+https://www.youtube.com/watch?v=Ez8F0nW6S-w
+
+git
+-----
+git config --global user.name "NavyashreeN-DevOps"
+git config --global user.email "email"
+git config --global color.ui auto
+git config --list
+git init
+git pull (repository link)
+cat README.md
+
+git branch
+git branch navya-1
+git checkout navya-1
+
+https://youtu.be/o1YDW_jnvvk?si=d1pDX7468rgJaMEn
+git config --global user.name "NavyashreeN-DevOps"
+git config --global user.email "email"
+git branch
+git checkout -b test
+git add . 
+git commit -m "v1"
+git push -u origin 
+
+
+
+GIT COMMANDS:-
+---------------
+
+configuring the git account details:-
+-----------------------------------------
+git config --global user.name "Pranith9700"
+git config --global user.email "chinnubathula143@gmail.com"
+
+git intiating:-
+--------------
+git init
+
+create new branch:-
+------------------
+git branch new
+new= branch name
+
+going into branch:-
+-------------------
+git chechout new
+new = branch name
+
+checking the status of updates:-
+----------------------------------
+git status
+
+adding all files at once in commit:-
+-------------------------------------
+git add --all
+
+commiting files with message:-
+-----------------------------
+git commit -m "new1"
+new1=message
+
+pushing the files to git:-
+------------------------
+git push
+
+adding the repo link:-
+------------------------
+git remote add aws https://github.com/Pranith9700/aws.git
+
+repo link= https://github.com/Pranith9700/aws.git
+setting the files  where to move:-
+---------------------------------
+git push --set-upstream aws new
+
+aws=repo name  new= branch name
+
+
+
+
+
+
+
+
